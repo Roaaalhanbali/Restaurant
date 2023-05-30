@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/6a28aa95b9.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./style.css">
+    <title>Restaurant Joj</title>
+</head>
+<body>
+    <header>
+        <h1>Joj Food!</h1>
+        <nav>
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="">Other</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <fieldset>
+            <legend>Choose Your Food!</legend>
+            <form id="foodForm">
+                <label for="foodName">Food Name:</label>
+                <input type="text" id="foodName" name="foodName" required><br>
+                <label for="foodType">Types of Food:</label>
+                <select id="foodType" name="foodType">
+                    <option value="fruit_vegetables">Fruit and Vegetables</option>
+                    <option value="starchy_food">Starchy Food</option>
+                    <option value="dairy">Dairy</option>
+                    <option value="protein">Protein</option>
+                    <option value="fat">Fat</option>
+                </select><br>
+                <label for="price">Price:</label>
+                <input type="number" id="price" name="price" step="0.01"><br>
+                <input type="submit" value="Submit"><br><br>
+            </form>
+        </fieldset>
+        <br>
+        <table id="foodTable" class="food-table">
+            <tr>
+                <th>Food ID</th>
+                <th>Food Name</th>
+                <th>Food Type</th>
+                <th>Price</th>
+            </tr>
+        </table>
+    </main>
+    <footer>
+        <p>&copy; All rights reserved for asac</p>
+        <a href="https://instagram.com/roaaalhanbali?igshid=ZGUzMzM3NWJiOQ=="><i class="fa-brands fa-instagram"></i></a></i>
+        <a href="https://www.facebook.com/profile.php?id=100012725168978"><i class="fa-brands fa-facebook"></i></a></i>
+    </footer>
+    <script src="./app.js"></script>
+</body>
+</html>
